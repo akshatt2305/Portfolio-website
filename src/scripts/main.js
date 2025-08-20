@@ -20,3 +20,4 @@ document.querySelectorAll('.card').forEach(card => {
     card.style.boxShadow = '';
   });
 });
+
