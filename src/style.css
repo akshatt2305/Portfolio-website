@@ -1,0 +1,220 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #F5F7FA;
+    color: #222;
+}
+
+nav {
+    background: #1A237E;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1976D2;
+}
+
+.hero {
+    background: linear-gradient(120deg, #1A237E 60%, #1976D2 100%);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+    width: 100%; /* Use container width */
+    margin-top: 0; /* Remove extra margin */
+    padding-top: 32px; /* Space below navbar */
+    padding-bottom: 32px; /* Space below hero */
+}
+
+.hero-content {
+    max-width: 1000px;
+    padding: 36px 24px;
+    background: rgba(0,0,0,0.10);
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: #1976D2;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #1565C0 60%, #1A237E 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.section {
+    padding: 56px 0;
+    margin-bottom: 36px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
+}
+
+.gray-bg {
+    background-color: #F5F7FA;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #1976D2;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    align-items: start;
+    overflow-x: unset; /* Remove horizontal scroll */
+}
+
+.card {
+    background: #fff;
+    padding: 28px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.2s;
+    border: 1px solid #eaeaea;
+    min-width: 240px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    height: 160px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #1A237E;
+    color: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.08rem;
+}
+
+.skills-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 2px 0;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Make Skills & Tools section dynamic and responsive */
+#skills .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    align-items: start;
+    overflow-x: unset; /* No horizontal scroll */
+}
+
+#skills .card {
+    min-width: 0; /* Allow cards to shrink for responsiveness */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Project cards: make them responsive and adjust width */
+#projects .card {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
